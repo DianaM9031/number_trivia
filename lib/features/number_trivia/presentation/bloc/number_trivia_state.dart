@@ -1,5 +1,6 @@
 part of 'number_trivia_bloc.dart';
 
+@immutable
 abstract class NumberTriviaState extends Equatable {
   const NumberTriviaState();
 }
@@ -31,3 +32,4 @@ class Error extends NumberTriviaState {
   @override
   List<Object> get props => [message];
 }
+
